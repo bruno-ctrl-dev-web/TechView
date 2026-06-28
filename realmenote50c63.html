@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="techviewfavicon.png" sizes="64x64" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realme Note 50 vs C63: qual vale mais a pena em 2026? | TechView</title>
+  <meta name="description" content="Comparativo completo entre Realme Note 50 e Realme C63: especificações técnicas, diferenças e qual escolher em 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── Variáveis ── */
+    :root {
+      --color-bg:           #FFFFFF;
+      --color-bg-secondary: #F5F6F8;
+      --color-text:         #1A1D23;
+      --color-text-muted:   #5C6470;
+      --color-border:       #E2E5EA;
+      --color-primary:      #2563EB;
+      --color-primary-dark: #1D4ED8;
+      --color-accent:       #F59E0B;
+      --color-accent-dark:  #D97706;
+      --color-heading:      #0F2C59;
+
+      --sp-1: 8px;
+      --sp-2: 16px;
+      --sp-3: 24px;
+      --sp-4: 32px;
+      --sp-6: 48px;
+      --sp-8: 64px;
+
+      --font-title: 'Sora', sans-serif;
+      --font-body:  'Inter', sans-serif;
+      --radius: 0.5rem;
+    }
+
+    /* ── Reset ── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ── Base ── */
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-title);
+      color: var(--color-heading);
+      line-height: 1.3;
+    }
+
+    a { color: var(--color-primary); text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ── Header ── */
+    header {
+      background: var(--color-heading);
+      padding: var(--sp-2) var(--sp-3);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .site-name {
+      font-family: var(--font-title);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+
+    .site-name span { color: var(--color-accent); }
+
+    /* ── Layout central (sem anúncios por enquanto) ── */
+    .page-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: var(--sp-4) var(--sp-3);
+    }
+
+    /* ── Área do artigo ── */
+    .article-content {
+      min-width: 0;
+    }
+
+    /* ── H1 ── */
+    h1 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      font-weight: 700;
+      margin-bottom: var(--sp-3);
+    }
+
+    /* ── Divisor entre os dois telefones ── */
+    .product-divider {
+      border: none;
+      border-top: 2px dashed var(--color-border);
+      margin: var(--sp-8) 0;
+    }
+
+    /* ── Imagem do produto ── */
+    figure {
+      margin: var(--sp-4) 0;
+      text-align: center;
+    }
+
+    figure img {
+      border-radius: 12px;
+      border: 1px solid var(--color-border);
+      display: inline-block;
+      max-width: 100%;
+      max-height: 420px;
+      width: auto;
+      object-fit: contain;
+      background: var(--color-bg-secondary);
+    }
+
+    figcaption {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-top: var(--sp-1);
+    }
+
+    /* ── Descrição ── */
+    .description {
+      font-size: 1.05rem;
+      color: var(--color-text);
+      margin-bottom: var(--sp-3);
+      line-height: 1.75;
+    }
+
+    /* ── Botão Comprar ── */
+    .cta-wrapper { margin-bottom: var(--sp-4); }
+
+    .btn-buy {
+      display: inline-block;
+      background-color: var(--color-accent);
+      color: #1A1D23;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 14px 36px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: var(--sp-3) 0;
+      transition: background-color 0.18s ease, transform 0.12s ease;
+    }
+
+    .btn-buy:hover { background-color: var(--color-accent-dark); transform: translateY(-1px); }
+    .btn-buy:active { transform: translateY(0); }
+
+    /* ── Especificações ── */
+    .specs-section {
+      background: var(--color-bg-secondary);
+      border-radius: 10px;
+      padding: var(--sp-3);
+      margin-bottom: var(--sp-2);
+    }
+
+    .specs-section h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: var(--sp-2);
+    }
+
+    .spec-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-1);
+      list-style: none;
+    }
+
+    .spec-item {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-1);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 0.9rem;
+      background-color: var(--color-bg);
+      white-space: nowrap;
+    }
+
+    .spec-label { font-weight: 600; color: var(--color-heading); }
+
+    /* ── "Vale a pena comprar?" ── */
+    .opinion-section { margin-bottom: var(--sp-2); }
+
+    .opinion-section h2 {
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      font-weight: 700;
+      margin-bottom: var(--sp-2);
+    }
+
+    .opinion-section p {
+      font-size: 1.05rem;
+      font-weight: 400;
+      margin-bottom: var(--sp-3);
+      line-height: 1.8;
+    }
+
+    /* ── "Veja também" (links internos) ── */
+    .see-also {
+      background: var(--color-bg-secondary);
+      border-radius: 10px;
+      padding: var(--sp-3);
+      margin-top: var(--sp-4);
+    }
+
+    .see-also h2 {
+      font-size: 1.1rem;
+      margin-bottom: var(--sp-2);
+    }
+
+    .see-also ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-1);
+    }
+
+    .see-also a { font-weight: 600; }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--color-heading);
+      padding: var(--sp-3);
+      text-align: center;
+    }
+
+    footer p { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+    footer strong { color: #fff; font-family: var(--font-title); }
+    footer span { color: var(--color-accent); }
+
+    /* ── Responsivo ── */
+    @media (max-width: 600px) {
+      .page-wrapper { padding: var(--sp-3) var(--sp-2); }
+      .btn-buy { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <span class="site-name">Tech<span>View</span></span>
+    </div>
+  </header>
+
+  <!-- Layout central -->
+  <div class="page-wrapper">
+
+    <!-- Conteúdo do artigo -->
+    <main>
+      <article class="article-content">
+
+        <h1>Realme Note 50 vs Realme C63: qual vale mais a pena em 2026?</h1>
+
+        <p class="description">
+          O <strong>Realme Note 50</strong> e o <strong>Realme C63</strong> são duas opções de entrada da Realme
+          que competem diretamente com o <a href="techview.html">Samsung Galaxy A07</a>. Abaixo, veja a ficha
+          técnica e a análise de cada um para decidir qual combina melhor com o seu uso do dia a dia.
+        </p>
+
+        <!-- ============================================= -->
+        <!-- PRODUTO 1: REALME NOTE 50                      -->
+        <!-- ============================================= -->
+
+        <h2 id="note50" style="font-size: clamp(1.3rem, 2.8vw, 1.8rem); margin-bottom: var(--sp-3);">Realme Note 50</h2>
+
+        <!-- Imagem do produto 1 -->
+        <!-- EDITAR AQUI: troque "note50.png" pelo nome do arquivo da imagem do Realme Note 50 -->
+        <figure>
+          <img
+            src="note50.png"
+            alt="Realme Note 50 — smartphone Android de entrada da Realme, frente e verso"
+            width="600"
+            height="400"
+          />
+          <!-- EDITAR AQUI: troque a fonte da imagem se necessário -->
+          <figcaption>Realme Note 50 — Fonte: Realme</figcaption>
+        </figure>
+
+        <p class="description">
+          O <strong>Realme Note 50</strong> é um smartphone de entrada com design ultrafino, tela grande de 90 Hz
+          e bateria de longa duração. Uma opção simples e direta para quem quer um celular funcional sem
+          gastar muito.
+        </p>
+
+        <!-- Botão Comprar 1 -->
+        <!-- EDITAR AQUI: troque o link pelo seu link de afiliado do Realme Note 50 -->
+        <div class="cta-wrapper">
+          <a href="https://www.magazinevoce.com.br/magazinetechviewbr/smartphone-realme-note-50-4g-128gb-4gb-ram-versao-global/p/dg571f0j3g/te/rl50/" target="_blank" rel="noopener noreferrer" class="btn-buy">
+            Comprar Realme Note 50
+          </a>
+        </div>
+
+        <!-- Especificações técnicas 1 -->
+        <section class="specs-section">
+          <h2>Especificações técnicas</h2>
+          <ul class="spec-list">
+            <li class="spec-item"><span class="spec-label">Processador:</span> Unisoc Tiger T612 (12nm), até 1.8 GHz</li>
+            <li class="spec-item"><span class="spec-label">RAM:</span> 3 GB / 4 GB</li>
+            <li class="spec-item"><span class="spec-label">Armazenamento:</span> 64 GB / 128 GB (expansível via microSD)</li>
+            <li class="spec-item"><span class="spec-label">Tela:</span> 6,74" IPS LCD, 720 x 1600 px (HD+), 90 Hz</li>
+            <li class="spec-item"><span class="spec-label">Câmera traseira:</span> 13 MP (principal) + sensor auxiliar de IA</li>
+            <li class="spec-item"><span class="spec-label">Câmera frontal:</span> 5 MP</li>
+            <li class="spec-item"><span class="spec-label">Bateria:</span> 5.000 mAh, carregamento 10W</li>
+            <li class="spec-item"><span class="spec-label">Sistema operacional:</span> Android 13 (Realme UI T)</li>
+            <li class="spec-item"><span class="spec-label">Marca:</span> Realme</li>
+          </ul>
+        </section>
+
+        <!-- Vale a pena comprar? 1 -->
+        <section class="opinion-section">
+          <h2>Vale a pena comprar o Realme Note 50?</h2>
+          <p>
+            Sim, o Realme Note 50 é uma boa escolha para quem quer um celular simples e funcional, na mesma
+            faixa de preço do Galaxy A07. A tela de 6,74 polegadas com 90 Hz entrega uma navegação fluida, e
+            a bateria de 5.000 mAh aguenta o dia todo de uso moderado. O ponto fraco é o carregamento de
+            apenas 10W, bem mais lento que o de outros modelos da categoria. Para quem busca um aparelho de
+            entrada simples e não se importa de carregar por mais tempo, é uma recomendação tranquila.
+          </p>
+        </section>
+
+        <hr class="product-divider" />
+
+        <!-- ============================================= -->
+        <!-- PRODUTO 2: REALME C63                          -->
+        <!-- ============================================= -->
+
+        <h2 id="c63" style="font-size: clamp(1.3rem, 2.8vw, 1.8rem); margin-bottom: var(--sp-3);">Realme C63</h2>
+
+        <!-- Imagem do produto 2 -->
+        <!-- EDITAR AQUI: troque "C63.png" pelo nome do arquivo da imagem do Realme C63 -->
+        <figure>
+          <img
+            src="C63.png"
+            alt="Realme C63 — smartphone Android de entrada da Realme, frente e verso"
+            width="600"
+            height="400"
+          />
+          <!-- EDITAR AQUI: troque a fonte da imagem se necessário -->
+          <figcaption>Realme C63 — Fonte: Realme</figcaption>
+        </figure>
+
+        <p class="description">
+          O <strong>Realme C63</strong> é a versão mais atual e robusta da dupla, com Android 14, carregamento
+          mais rápido e resistência a poeira e respingos. Uma opção um pouco mais cara, porém com mais
+          recursos modernos.
+        </p>
+
+        <!-- Botão Comprar 2 -->
+        <!-- EDITAR AQUI: troque o link pelo seu link de afiliado do Realme C63 -->
+        <div class="cta-wrapper">
+          <a href="https://www.magazinevoce.com.br/magazinetechviewbr/realme-c63-nfc-256gb-128gb-12gb-ram-camera-50mp-tela-6-74-resistente-a-agua-ipx54-dual-sim-lancamento-2024-unity/p/eb0430c573/te/rl63/?seller_id=naecom" target="_blank" rel="noopener noreferrer" class="btn-buy">
+            Comprar Realme C63
+          </a>
+        </div>
+
+        <!-- Especificações técnicas 2 -->
+        <section class="specs-section">
+          <h2>Especificações técnicas</h2>
+          <ul class="spec-list">
+            <li class="spec-item"><span class="spec-label">Processador:</span> Unisoc Tiger T612 (12nm), até 1.8 GHz</li>
+            <li class="spec-item"><span class="spec-label">RAM:</span> 6 GB / 8 GB</li>
+            <li class="spec-item"><span class="spec-label">Armazenamento:</span> 128 GB / 256 GB (expansível)</li>
+            <li class="spec-item"><span class="spec-label">Tela:</span> 6,75" IPS LCD, 720 x 1600 px, 90 Hz</li>
+            <li class="spec-item"><span class="spec-label">Câmera traseira:</span> 50 MP + lente auxiliar com IA</li>
+            <li class="spec-item"><span class="spec-label">Câmera frontal:</span> 8 MP</li>
+            <li class="spec-item"><span class="spec-label">Bateria:</span> 5.000 mAh, carregamento 45W</li>
+            <li class="spec-item"><span class="spec-label">Sistema operacional:</span> Android 14 (Realme UI 5.0)</li>
+            <li class="spec-item"><span class="spec-label">Resistência:</span> Certificação IP54 (poeira e respingos)</li>
+            <li class="spec-item"><span class="spec-label">Marca:</span> Realme</li>
+          </ul>
+        </section>
+
+        <!-- Vale a pena comprar? 2 -->
+        <section class="opinion-section">
+          <h2>Vale a pena comprar o Realme C63?</h2>
+          <p>
+            Sim, o Realme C63 é mais robusto e vale o investimento extra para quem quer mais
+            durabilidade e desempenho. O carregamento de 45W é bem mais rápido, o Android 14 traz atualizações
+            mais recentes e a certificação IP54 protege contra poeira e respingos de água — algo raro nessa
+            faixa de preço. Se o orçamento permitir, o C63 é a escolha mais segura a longo prazo.
+          </p>
+          <h2>Qual escolher: Note 50 ou C63?</h2>
+          <p>
+            Se o preço for o fator decisivo, o Realme Note 50 é a opção mais barata e mantém o essencial:
+            tela grande de 90 Hz e bateria de longa duração, ficando na mesma faixa de preço do Galaxy A07.
+            Já o Realme C63 compensa um valor maior com mais RAM, câmera melhor, carregamento mais rápido e
+            resistência à poeira e respingos. Para quem compara com o
+            <a href="techview.html">Samsung Galaxy A07</a>, ambos os modelos da Realme se destacam pela tela
+            com 90 Hz, algo que o A07 não oferece.
+          </p>
+        </section>
+
+        <!-- Links internos — Veja também -->
+        <section class="see-also">
+          <h2>Veja também</h2>
+          <ul>
+            <li><a href="techview.html">Samsung Galaxy A07: vale a pena comprar em 2026?</a></li>
+            <!-- EDITAR AQUI: adicione links para outras páginas de concorrentes quando criá-las -->
+            <!-- <li><a href="moto-e14.html">Motorola Moto E14/E15: ficha técnica e análise</a></li> -->
+          </ul>
+        </section>
+
+      </article>
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 <strong>Tech<span>View</span></strong>. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
